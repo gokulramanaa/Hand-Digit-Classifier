@@ -82,7 +82,7 @@ pause;
 pred1 = predict(Theta1,Theta2,X_test);
 
 %fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y_train)) * 100);
-fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred1 == y_test)) * 100);
+fprintf('\Testing Set Accuracy: %f\n', mean(double(pred1 == y_test)) * 100);
 
 
 
