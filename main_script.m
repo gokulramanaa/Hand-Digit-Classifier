@@ -30,7 +30,7 @@ y_test = y(sel(4501:end),:);
 fprintf('\nInitializing Neural Network Parameters ...\n')
 initial_Theta1 = randInitializeWeights(input_layer_size, hidden_layer_size);
 initial_Theta2 = randInitializeWeights(hidden_layer_size, num_labels);
-
+%
 % Unroll parameters
 nn_params = [initial_Theta1(:) ; initial_Theta2(:)];
 
@@ -81,7 +81,7 @@ pause;
 %pred = predict(Theta1, Theta2, X_train);
 pred1 = predict(Theta1,Theta2,X_test);
 
-fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y_train)) * 100);
+%fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y_train)) * 100);
 fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred1 == y_test)) * 100);
 
 
